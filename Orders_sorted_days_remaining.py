@@ -4,7 +4,7 @@
 # It then parses 'orders.csv' and sorts by 'certificate.days_remaining', writing the results to 'orders_sort.csv'
 # 'orders_sort.csv' is read and the certificate 'name', 'order id' and 'days remaining' are printed to console. 
 
-# Usage: You will need to provide your own DigiCert API key on line 15. Python Pandas is needed as well. https://pandas.pydata.org/
+# Usage: You will need to provide your own DigiCert API key on line 15. The Pandas Python module is needed as well. https://pandas.pydata.org/
 
 
 

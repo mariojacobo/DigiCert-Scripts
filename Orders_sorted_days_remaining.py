@@ -1,3 +1,11 @@
+# Author: Ben Morse 
+
+# This script grabs all the current orders in the account and saves the data to 'orders.csv'.
+# It then parses 'orders.csv' and sorts by 'certificate.days_remaining', writing the results to 'orders_sort.csv'
+# 'orders_sort.csv' is read and the certificate 'name', 'order id' and 'days remaining' are printed to console. 
+
+
+
 import requests
 import pandas as pd
 
@@ -20,8 +28,8 @@ df = pd.read_csv("orders.csv")
 df.sort_values("certificate.days_remaining", axis = 0, ascending = True,
                  inplace = True, na_position ='last')
 #Save as a New CSV
-df.to_csv("order_sort.csv")
-dfsorted = pd.read_csv("order_sort.csv")
+df.to_csv("orders_sort.csv")
+dfsorted = pd.read_csv("orders_sort.csv")
 
 #Grab Columns from CSV
 x = dfsorted["id"]
